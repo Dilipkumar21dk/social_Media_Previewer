@@ -1,0 +1,30 @@
+/* Base Styles */
+body { font-family: Arial, sans-serif; background: #fafafa; margin:0; }
+.container { max-width: 900px; margin: 20px auto; padding: 20px; }
+h1 { color: #62caf7; margin-bottom: 8px; text-align: center;}
+.split-view { display: flex; gap: 20px; }
+.social-profile, .post-preview { flex: 1; border: 1px solid #ddd; padding: 15px; border-radius: 10px; background: #fff; }
+.platform { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid #ccc; border-radius: 6px; cursor: pointer; position: relative; margin: 4px 0; }
+.platform-logo { width: 20px; height: 20px; }
+.close-btn { margin-left: 6px; color: #666; cursor: pointer; font-weight: bold; }
+.close-btn:hover { color: red; }
+.platform-buttons { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.platform-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 2px solid #ff69b4; background: #fff0f7; cursor: pointer; }
+.platform-btn.active { background: #ff69b4; color: #fff; }
+.platform-btn img { width: 26px; height: 26px; }
+.post-type-buttons { display: flex; gap: 8px; justify-content: center; margin-bottom: 12px; }
+.post-type-btn { padding: 6px 16px; border-radius: 6px; border: 1px solid #ff69b4; background: #fff0f7; color: #ff69b4; cursor: pointer; }
+.post-type-btn.active { background: #ff69b4; color: #fff; }
+.live-text-box textarea { width: 100%; border-radius: 6px; border: 1px solid #ccc; padding: 8px; resize: vertical; margin-bottom: 12px; background: #f8f8fc; }
+.upload-area { border: 2px dashed #ccc; padding: 12px; text-align: center; margin-bottom: 12px; }
+.uploaded-files { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.uploaded-item { position: relative; display: inline-block; }
+.uploaded-item img, .uploaded-item video { max-width: 100px; max-height: 100px; }
+.uploaded-item .file-close-btn { position: absolute; top: -6px; right: -6px; background: #fff; border-radius: 50%; padding: 2px 6px; cursor: pointer; font-weight: bold; }
+.preview-box { border: 1px solid #ddd; padding: 10px; background: #fff; min-height: 100px; margin-top: 8px; }
+.preview-header { display: flex; align-items: center; gap: 8px; font-weight: bold; margin-bottom: 4px; }
+.platform-logo-preview { width: 24px; height: 24px; }
+.preview-timestamp { font-size: 12px; color: #666; margin-bottom: 6px; }
+.alert-box { display: none; background: #fff4e6; color: #874700; border: 1px solid #f1c27d; padding: 8px; border-radius: 6px; font-weight: 600; margin-bottom: 6px; }
+.alert-box::before { content: "⚠️ "; }
+.interactions button { margin-right: 6px; }
